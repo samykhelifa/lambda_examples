@@ -8,12 +8,13 @@ public class TraditionalSearch {
          animals.add(new Animal("kangaroo", true, false));
          animals.add(new Animal("rabbit", true, false));
          animals.add(new Animal("turtle", false, true));
-        print(animals, new CheckIfHopper());      // pass class that does check
-    }
+       //  print(animals, new CheckIfHopper());      // pass class that does check
+         print(animals, a -> a.canSwim());   
+ }
 
-   private static void print(List<Animal> animals, CheckTrait checker) {
+   private static void print(List<Animal> animals, CheckTrait c) {
       for (Animal animal : animals) {
-          if (checker.test(animal))               // the general check
+          if (c.test(animal))               // the general check
               System.out.print(animal + " ");
               }
           System.out.println();
