@@ -1,0 +1,3 @@
+https://pragprog.com/book/vsjava8/functional-programming-in-java
+
+https://pragprog.com/titles/vsjava8/source_code
