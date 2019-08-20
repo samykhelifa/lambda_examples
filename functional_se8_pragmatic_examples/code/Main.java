@@ -24,7 +24,7 @@ public class Main {
     System.out.println("enter letter : ");
     String letter = scan.next();
     
-     pickName(friends,letter);
+     pickName(friends,letter.toUpperCase());
          System.out.println(" ");
   }
 }
