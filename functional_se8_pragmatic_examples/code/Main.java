@@ -15,6 +15,8 @@ public class Main {
             names.stream() 
                  .filter(name ->name.startsWith(startingLetter)) 
                  .findFirst();
+    System.out.println("found name : "+ foundName.isPresent());
+    foundName.ifPresent(name -> System.out.println("Hello " + name));
       System.out.println(String.format("A name starting with %s: %s",
                          startingLetter, foundName.orElse("No name found")));
     }
