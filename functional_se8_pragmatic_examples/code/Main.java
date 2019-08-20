@@ -1,4 +1,5 @@
 
+import java.util.Scanner;
 import java.util.stream.Stream;
 import java.util.Optional;
 import java.util.List;
@@ -19,7 +20,11 @@ public class Main {
     }
 
   public static void main(final String[] args) {
-    pickName(friends,"S");
+    Scanner scan = new Scanner(System.in);(
+    System.out.println("enter letter : ");
+    String letter = scan.next();
+    
+     pickName(friends,letter);
          System.out.println(" ");
   }
 }
